@@ -1,0 +1,54 @@
+#
+# FreedomOpMod Main Configuration
+#
+
+general:
+  # Name of your server?
+  name: FreedomOp
+    
+  # MOTD - Color codes (&) and 2 lines (||) are supported // Random chat colors are also avaliable (&-)
+  motd: '&-Welcome to FreedomOp! Enjoy your stay - fop.rocks'
+    
+  # Website URL - Useful to link to forum for ban appeals, policy, admin applications etc.
+  website_url: https://fop.rocks/
+  
+  #Spawn point
+  spawn:
+      world: flatlands
+      posx: 0
+      posy: 50
+      posz: 0
+  
+commands:
+  default:
+    - '/gamemode'
+    - '/time'
+    - '/ban-ip'
+    - '/pardon-ip'
+    - '/pardon'
+    - '/save-on'
+    - '/save-off'
+    - '/nuke'
+    - '/summon'
+    - '/setblock'
+    - '/fill'
+    - '/tellraw'
+    
+  admins:
+    - '/coreprotect'
+    - '/stop'
+    - '/restart'
+    - '/save-all'
+    - '/reload'
+    - '/socialspy'
+    - '/gamerule'
+    - '/kick'
+
+  # MySQL/MariaDB details are REQUIRED.
+sql:
+  hostname: 127.0.0.1
+  port: 3306
+  username: admin
+  password: ''
+  databaseName: freedomop
+

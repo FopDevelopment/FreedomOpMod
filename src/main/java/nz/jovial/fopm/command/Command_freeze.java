@@ -24,7 +24,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Freeze a player", usage = "/<command> <player>", aliases = "fr", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Freeze a player", usage = "/<command> <player>", aliases = "fr", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_freeze
 {
 

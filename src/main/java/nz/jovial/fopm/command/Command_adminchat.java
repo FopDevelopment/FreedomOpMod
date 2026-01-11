@@ -24,7 +24,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Chat to admins", usage = "/<command> <message>", aliases = "ac, o", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Chat to admins", usage = "/<command> <message>", aliases = "ac, o", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_adminchat
 {
 

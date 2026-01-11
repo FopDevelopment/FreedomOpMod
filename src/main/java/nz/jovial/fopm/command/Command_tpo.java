@@ -23,7 +23,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Force teleport to another player.", usage = "/<command> <player>", source = SourceType.IN_GAME, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Force teleport to another player.", usage = "/<command> <player>", source = SourceType.IN_GAME, rank = Rank.ADMIN)
 public class Command_tpo
 {
 

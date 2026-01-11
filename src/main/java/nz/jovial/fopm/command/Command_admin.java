@@ -25,7 +25,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Manage an admin", usage = "/<command> <add <player> | remove <player> | setrank <player> <rank> | info <player>", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Manage an admin", usage = "/<command> <add <player> | remove <player> | setrank <player> <rank> | info <player>", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_admin
 {
 
@@ -42,9 +42,9 @@ public class Command_admin
             {
                 if (args[0].equalsIgnoreCase("add"))
                 {
-                    if (!Rank.getRank(sender).isAtLeast(Rank.GENERAL_MANAGER))
+                    if (!Rank.getRank(sender).isAtLeast(Rank.SENIOR_ADMIN))
                     {
-                        sender.sendMessage(ChatColor.RED + "You must be at least General Manager to be able to execute this command!");
+                        sender.sendMessage(ChatColor.RED + "You must be at least Senior Admin to be able to execute this command!");
                         return true;
                     }
 
@@ -82,9 +82,9 @@ public class Command_admin
 
                 if (args[0].equalsIgnoreCase("remove"))
                 {
-                    if (!Rank.getRank(sender).isAtLeast(Rank.GENERAL_MANAGER))
+                    if (!Rank.getRank(sender).isAtLeast(Rank.SENIOR_ADMIN))
                     {
-                        sender.sendMessage(ChatColor.RED + "You must be at least General Manager to be able to execute this command!");
+                        sender.sendMessage(ChatColor.RED + "You must be at least Senior Admin to be able to execute this command!");
                         return true;
                     }
 
@@ -135,9 +135,9 @@ public class Command_admin
             {
                 if (args[0].equalsIgnoreCase("setrank"))
                 {
-                    if (!Rank.getRank(sender).isAtLeast(Rank.SYSTEM_MANAGER))
+                    if (!Rank.getRank(sender).isAtLeast(Rank.SYSTEM_ADMIN))
                     {
-                        sender.sendMessage(ChatColor.RED + "You must be at least System Manager to execute this command!");
+                        sender.sendMessage(ChatColor.RED + "You must be at least System Admin to execute this command!");
                         return true;
                     }
 
@@ -167,9 +167,9 @@ public class Command_admin
                         return true;
                     }
 
-                    if (!rank.isAtLeast(Rank.SWING_MANAGER))
+                    if (!rank.isAtLeast(Rank.ADMIN))
                     {
-                        sender.sendMessage(ChatColor.RED + "The rank must be at least Swing Manager!");
+                        sender.sendMessage(ChatColor.RED + "The rank must be at least Admin!");
                         return true;
                     }
 

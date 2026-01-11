@@ -22,12 +22,11 @@ import org.apache.commons.lang.StringUtils;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import net.kyori.adventure.text.Component;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@CommandParameters(description = "Permanently ban a username or IP", usage = "/<command> <username | ip> [reason]", source = SourceType.BOTH, rank = Rank.OFFICER)
+@CommandParameters(description = "Permanently ban a username or IP", usage = "/<command> <username | ip> [reason]", source = SourceType.BOTH, rank = Rank.SYSTEM_ADMIN)
 public class Command_permban
 {
 

@@ -23,7 +23,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Broadcast your message", usage = "/<command> <message>", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Broadcast your message", usage = "/<command> <message>", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_say
 {
 

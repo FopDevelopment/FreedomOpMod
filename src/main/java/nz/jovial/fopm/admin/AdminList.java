@@ -16,10 +16,13 @@
 package nz.jovial.fopm.admin;
 
 import lombok.Getter;
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import nz.jovial.fopm.PlayerData;
 import nz.jovial.fopm.rank.Rank;
 import nz.jovial.fopm.util.FLog;
 import nz.jovial.fopm.util.FUtil;
 import nz.jovial.fopm.util.SQLHandler;
+import org.apache.commons.lang.StringUtils;
 import org.bukkit.entity.Player;
 
 import java.sql.Connection;
@@ -94,9 +97,13 @@ public class AdminList
         Admin admin = new Admin();
         admin.setName(player.getName());
         admin.setIps(Collections.singletonList(player.getAddress().getHostString()));
-        admin.setRank(Rank.SWING_MANAGER);
+        admin.setRank(Rank.ADMIN);
         admin.setActive(true);
         addAdmin(admin);
+        
+        // Update player tag immediately
+        PlayerData.getPlayerData(player).setTag(Rank.getRank(player).getTag());
+        player.playerListName(LegacyComponentSerializer.legacySection().deserialize(StringUtils.substring(Rank.getRank(player).getColor() + player.getName(), 0, 16)));
     }
 
     public static void updateRank(Player player, Rank rank)
@@ -109,6 +116,10 @@ public class AdminList
         Admin admin = getAdmin(player);
         admin.setRank(rank);
         admin.update();
+        
+        // Update player tag immediately
+        PlayerData.getPlayerData(player).setTag(Rank.getRank(player).getTag());
+        player.playerListName(LegacyComponentSerializer.legacySection().deserialize(StringUtils.substring(Rank.getRank(player).getColor() + player.getName(), 0, 16)));
     }
 
     public static void updateIp(Player player)

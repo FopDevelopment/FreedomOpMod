@@ -27,10 +27,10 @@ public enum Rank
     IMPOSTER("an", "Imposter", "IMP", ChatColor.DARK_GRAY),
     NON_OP("a", "Non-Op", "", ChatColor.WHITE),
     OP("an", "Op", "Op", ChatColor.BLUE),
-    SWING_MANAGER("a", "Swing Manager", "SM", ChatColor.AQUA),
-    GENERAL_MANAGER("a", "General Manager", "GM", ChatColor.GOLD),
-    SYSTEM_MANAGER("a", "System Manager", "SysM", ChatColor.LIGHT_PURPLE),
-    OFFICER("an", "Officer", "Officer", ChatColor.DARK_RED),
+    ADMIN("an", "Admin", "Admin", ChatColor.GREEN),
+    SENIOR_ADMIN("a", "Senior Admin", "Senior Admin", ChatColor.LIGHT_PURPLE),
+    EXECUTIVE("an", "Executive", "Executive", ChatColor.YELLOW),
+    SYSTEM_ADMIN("a", "System Admin", "Sys", ChatColor.DARK_RED),
     CONSOLE("the", "Console", "CONSOLE", ChatColor.DARK_GREEN);
 
     @Getter

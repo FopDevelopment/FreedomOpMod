@@ -25,7 +25,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Smites a bad player", usage = "/<command> <player> [reason]", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Smites a bad player", usage = "/<command> <player> [reason]", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_smite
 {
 

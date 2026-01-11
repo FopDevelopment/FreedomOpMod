@@ -17,6 +17,7 @@ package nz.jovial.fopm;
 
 import lombok.Getter;
 import lombok.Setter;
+import net.kyori.adventure.text.Component;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
@@ -50,6 +51,9 @@ public class PlayerData
     @Getter
     @Setter
     private boolean isVanished = false;
+    @Getter
+    @Setter
+    private boolean cmdSpy = false;
 
     private PlayerData(Player player)
     {
@@ -104,7 +108,7 @@ public class PlayerData
             @Override
             public void run()
             {
-                Bukkit.broadcastMessage(ChatColor.RED + "FreedomOp - Unmuting " + player.getName());
+                Bukkit.broadcast(Component.text(ChatColor.RED + "FreedomOp - Unmuting " + player.getName()));
                 setMuted(false);
             }
         }.runTaskLater(FreedomOpMod.plugin, 60L * 20L * 5L);
@@ -130,7 +134,7 @@ public class PlayerData
             @Override
             public void run()
             {
-                Bukkit.broadcastMessage(ChatColor.RED + "FreedomOp - Unfreezing " + player.getName());
+                Bukkit.broadcast(Component.text(ChatColor.RED + "FreedomOp - Unfreezing " + player.getName()));
                 setFrozen(false);
             }
         }.runTaskLater(FreedomOpMod.plugin, 60L * 20L * 5L);

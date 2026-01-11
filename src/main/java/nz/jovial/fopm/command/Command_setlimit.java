@@ -23,7 +23,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Set everyone's limit to 5000", usage = "/<command>", aliases = "setl", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Set everyone's limit to 5000", usage = "/<command>", aliases = "setl", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_setlimit
 {
 

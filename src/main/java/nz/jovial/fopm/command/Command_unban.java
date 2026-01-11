@@ -29,7 +29,7 @@ import java.util.Collections;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@CommandParameters(description = "Unbans a player or an IP", usage = "/<command> <username | ip>", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Unbans a player or an IP", usage = "/<command> <username | ip>", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_unban
 {
 

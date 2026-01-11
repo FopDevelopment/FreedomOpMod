@@ -40,7 +40,7 @@ import java.sql.SQLException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-@CommandParameters(description = "Bans a bad player or IP", usage = "/<command> <player } ip> [reason]", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Bans a bad player or IP", usage = "/<command> <player } ip> [reason]", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_ban
 {
 

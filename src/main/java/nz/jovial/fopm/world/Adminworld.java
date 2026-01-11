@@ -49,6 +49,6 @@ public class Adminworld extends CustomWorld
     @Override
     public Rank getRank()
     {
-        return Rank.SWING_MANAGER;
+        return Rank.ADMIN;
     }
 }

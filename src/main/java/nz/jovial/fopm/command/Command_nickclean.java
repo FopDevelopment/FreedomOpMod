@@ -27,7 +27,7 @@ import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-@CommandParameters(description = "Clean all nicknames.", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Clean all nicknames.", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_nickclean
 {
 

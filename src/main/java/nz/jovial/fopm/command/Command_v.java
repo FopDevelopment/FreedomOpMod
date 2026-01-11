@@ -20,7 +20,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Vanish.", aliases = "vanish", source = SourceType.IN_GAME, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Vanish.", aliases = "vanish", source = SourceType.IN_GAME, rank = Rank.ADMIN)
 public class Command_v
 {
 

@@ -193,6 +193,13 @@ public class PlayerListener implements Listener
         YamlConfiguration config = plugin.config.getConfig();
         FUtil.setConsole(false);
         
+        // Command Spy
+        Bukkit.getOnlinePlayers().forEach((p) -> {
+            if (AdminList.isAdmin(p) && PlayerData.getPlayerData(p).isCmdSpy() && !p.equals(player)) {
+                p.sendMessage(ChatColor.GRAY + player.getName() + ": " + event.getMessage());
+            }
+        });
+        
         for (String blocked : config.getStringList("commands.default")) {
             if (event.getMessage().equalsIgnoreCase(blocked) || event.getMessage().split(" ")[0].equalsIgnoreCase(blocked))
             {

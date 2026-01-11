@@ -22,7 +22,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Ops everyone on the server", source = SourceType.BOTH, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Ops everyone on the server", source = SourceType.BOTH, rank = Rank.ADMIN)
 public class Command_opall
 {
 

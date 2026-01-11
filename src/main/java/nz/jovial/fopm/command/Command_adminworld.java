@@ -21,7 +21,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-@CommandParameters(description = "Go to adminworld world", source = SourceType.IN_GAME, rank = Rank.SWING_MANAGER)
+@CommandParameters(description = "Go to adminworld world", source = SourceType.IN_GAME, rank = Rank.ADMIN)
 public class Command_adminworld
 {
 

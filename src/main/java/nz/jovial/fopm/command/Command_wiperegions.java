@@ -24,7 +24,7 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import net.kyori.adventure.text.Component;
 
-@CommandParameters(description = "Wipe every region in a specific world", usage = "/<command> <world>", source = SourceType.BOTH, rank = Rank.SYSTEM_MANAGER)
+@CommandParameters(description = "Wipe every region in a specific world", usage = "/<command> <world>", source = SourceType.BOTH, rank = Rank.EXECUTIVE)
 public class Command_wiperegions
 {
 
