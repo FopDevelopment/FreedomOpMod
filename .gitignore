@@ -1,0 +1,5 @@
+*.txt
+target/
+nb-configuration.xml
+*.ini
+*.iml

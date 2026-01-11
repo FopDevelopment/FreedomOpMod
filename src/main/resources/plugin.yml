@@ -1,0 +1,8 @@
+name: FreedomOpMod
+version: ${project.version}
+description: A main core plugin for FreedomOpMod
+main: nz.jovial.fopm.FreedomOpMod
+api-version: 1.21
+authors: [Focusvity, Paldiu]
+depend: [WorldEdit]
+softdepend: [CoreProtect, WorldGuard]
