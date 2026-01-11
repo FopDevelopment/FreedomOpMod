@@ -7,10 +7,10 @@ general:
   name: FreedomOp
     
   # MOTD - Color codes (&) and 2 lines (||) are supported // Random chat colors are also avaliable (&-)
-  motd: '&-Welcome to FreedomOp! Enjoy your stay'
+  motd: '&-Welcome to FreedomOp! Enjoy your stay - fop.rocks'
     
   # Website URL - Useful to link to forum for ban appeals, policy, admin applications etc.
-  website_url: http://freedomop.boards.net/
+  website_url: https://fop.rocks/
   
   #Spawn point
   spawn:
